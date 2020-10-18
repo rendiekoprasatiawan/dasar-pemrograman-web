@@ -1,0 +1,42 @@
+.container {
+    width: 600px;
+    height: 150px;
+    border: 5px solid #333;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* align-items: baseline; */
+    /* align-content: center; */
+
+}
+
+.container div {
+    background-color: rgb(19, 133, 255);
+    margin: 2px;
+    /*ngatur tinggi lebarnya semua sama */
+    flex: 1;
+    /* akhir */
+}
+
+
+.container div.dua {
+    flex: 3;
+    /* align-self: center; //ini untuk buat pengaturan sendiri */
+}
+
+
+
+/* order buat nukar posisi */
+/* 
+.container div.satu {
+    order: 3;
+}
+
+.container div.dua {
+    order: 2;
+}
+ */

@@ -1,0 +1,11 @@
+div {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: radial-gradient(farthest-corner, red 63%, green 80%);
+}
+
+/* closest-corner -> sudut terdekat */
+/* farthest-corner -> sudut terjauh */
+/* ada ellipse dan circle */
+/* bukan property melainkan value baru dari background-image*/

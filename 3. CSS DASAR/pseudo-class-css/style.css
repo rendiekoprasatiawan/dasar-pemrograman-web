@@ -1,0 +1,40 @@
+/* Pseudo Class 1 */
+.hello:link {
+    color: sandybrown;
+}
+
+.hello:hover {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.hello:active {
+    font-style: oblique;
+}
+
+.hello:visited {
+    color: red;
+}
+
+
+/* Pseudo Class 2 */
+ul li:nth-child(odd) a {
+    color: royalblue;
+}
+
+
+/* gabungannya */
+ul li:nth-child(odd) a:hover {
+    color: saddlebrown;
+}
+
+
+/* Pseudo Class 3 */
+p:first-of-type {
+    color: slateblue;
+}
+
+p:last-of-type {
+    color: slategrey;
+}

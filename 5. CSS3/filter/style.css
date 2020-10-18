@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+
+img {
+    filter: blur(5px) drop-shadow(5px 5px 5px black);
+}
+
+/* menggunakan layanan  https://www.youtube.com/redirect?q=http%3A%2F%2Fhtml5-demos.appspot.com%2Fstatic%2Fcss%2Ffilters%2Findex.html&redir_token=QUFFLUhqbFFJbFgyYkNJMWFjUjJ6LTZtSG9zeFlqc2pSd3xBQ3Jtc0ttN05udnZqZ0FMMk1kMjl2c256TG5USnJZVTFUbDg5U0EwVHFCdTd4UWpSNDZpUFNKdVdfa2pFOHAwdWNjRTFVTG13c1dGUVNfSnhOaVpvMExxenpnYWhKR0tBS0RJZkRnaHMyenVtMk0xd2MxTG5yaw%3D%3D&v=HvikjBA5jMc&event=video_description */

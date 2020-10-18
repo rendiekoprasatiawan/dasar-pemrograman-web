@@ -1,0 +1,17 @@
+/* inherit biasanya untuk yang defaulnnya gabisa diubah */
+/* makanya kita harus maksa mengubahnya dengan inherit */
+body {
+    color: salmon;
+    text-align: center;
+}
+
+div {
+    padding: 10px;
+    height: 5100px;
+}
+
+a {
+    color: inherit;
+    text-align: inherit;
+    padding-bottom: 100px;
+}

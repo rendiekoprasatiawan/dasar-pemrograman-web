@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+}
+
+img {
+    filter: grayscale(100%);
+}
+
+/* kalau tidak bisa pake emmet aja tulis property terus tab */
+/* kalau mau cek prefix tinggal salin kode terus paste ke: http://pleeease.io/ */
+/* web yang bisa melihat prefix belum support: http://shouldiprefix.com/ */

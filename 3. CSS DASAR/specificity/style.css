@@ -1,0 +1,21 @@
+/* tebak paragraf berwarna apa? */
+p#p1 {
+    color: red;
+}
+
+#p1 {
+    color: green;
+}
+
+p {
+    color: blue;
+}
+
+/* coba tebak lagi */
+ul#sarapan li {
+    color: red;
+}
+
+ul#sarapan li.favorit {
+    color: green;
+}

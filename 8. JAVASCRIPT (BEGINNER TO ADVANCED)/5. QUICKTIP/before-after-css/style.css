@@ -1,0 +1,35 @@
+/* div h1::after {
+    content: " Rendi";
+}
+
+div h1::before {
+    content: "What's Up ";
+} */
+
+div::before,
+div::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+div::before {
+    top: -15px;
+    left: -15px;
+    background-color: salmon;
+}
+
+div::after {
+    right: -15px;
+    bottom: -15px;
+    background-color: lightgreen;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: lightskyblue;
+    position: relative;
+    margin: 20px auto;
+}

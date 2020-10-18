@@ -1,0 +1,28 @@
+/* perbedaan min-content dan max-content */
+/* ketika min-content ditulis maka dia akan dipecah, mencari kata yang panjang */
+/* ketika max-content ditulis maka dia tidak akan dipecah, justru dia akan menjadi 1 baris panjang */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+}
+
+.item {
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}

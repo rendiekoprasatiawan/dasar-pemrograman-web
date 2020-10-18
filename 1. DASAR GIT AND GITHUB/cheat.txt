@@ -1,0 +1,10 @@
+pada intinya kalau bingung gunain aja:
+git --help -> ini untuk membantu kalau kita lupa
+git status -> nah ini penting kalau kita mau ada perubahan, selalu cek ini biar kita bisa mastiin dan biasanya ada arahan juga
+alias graph="git log --all --decorate --oneline --graph" -> untuk memudahkan liat graph dengan manggil cuma: graph
+git fetch -> mengambil commit saja, bisa untuk ngecek kalau sudah kolaborasi
+git pull -> mengambil commit serta menggabungkan/merge secara otomatis untuk penggabungan branch yang aktif
+
+git remote add origin <http segala macem> -> untuk ngeremote dari github ke git/vscode kita (file README.md jangan diceklis biar kita bisa ngeremotenya)
+
+gitginore.io -> ini untuk memasukkan file yang ingin dicegah, tapi melalui web generator

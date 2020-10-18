@@ -1,0 +1,36 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* penggunaan grid yang yang sudah lama; */
+    /* grid-column-gap: 10px; vertikal */
+    /* grid-row-gap: 10px; horizontal */
+    /* grid-gap: 10px; */
+
+    /* penggantinya adalah */
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: 10px;
+}
+
+.item {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}

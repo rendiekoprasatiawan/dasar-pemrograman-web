@@ -1,0 +1,36 @@
+/* grid template area adalah untuk medefiniskan nama dari area yang ditulis pada property grid-area pada item */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'header header header'
+        'sidebar sidebar sidebar'
+        'content content content'
+        'footer footer footer'
+    ; */
+    grid-template: [baris1-mulai] 'header header header'50px [baris-1akhir baris2-mulai] 'footer footer footer'100px [baris2-akhir] / 1fr 2fr 3fr;
+}
+
+.item {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px;
+    box-sizing: border-box; */
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}

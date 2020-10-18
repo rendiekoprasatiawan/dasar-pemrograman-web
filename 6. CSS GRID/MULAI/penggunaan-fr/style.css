@@ -1,0 +1,32 @@
+/* macam-macam grid untuk row dan columns */
+/* grid-template-columns : untuk mengatur columns */
+/* grid-template-row : untuk mengatur baris */
+/* grid-auto-row & grid-auto-rows : menangani item yang tidak dituliskan/implicit */
+/* grid-auto-flow : untuk mengatur penempatan item pada tracknya, mau jadi baris atau jadi coluumns */
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 50px;
+    /* penggabungann fr dengan px */
+}
+
+.item {
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+    color: #35456e;
+}
+
+ul a {
+    text-decoration: none;
+    color: #451f1f;
+}
+
+ol a {
+    text-decoration: none;
+    color: #6b4160;
+}
+
+a {
+    color: #486344;
+}
+
+.p1 {
+    color: salmon;
+}
+
+.p2 {
+    color: sandybrown;
+}

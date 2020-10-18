@@ -1,0 +1,28 @@
+/* auto-fit dan auto-fill akan mengisi ketika resolusi layar tidak sama, misal dari layar laptop ke layar hp*/
+/* tapi perbedaannya akan terlihat ketika itemnya lebih sedikit dan dia akan berbeda pada lebarnya */
+/* auto-fit akan berakhir pada item yang terakhir */
+/* auto-fill akan mencari lagi apakah masih bisa muat satu lagi colomn atau baris, jika iya maka dia akan mengisinya tapi dengan kotak kosong */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+}
+
+.item {
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}

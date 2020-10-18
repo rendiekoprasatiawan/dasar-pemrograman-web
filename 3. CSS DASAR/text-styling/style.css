@@ -1,0 +1,15 @@
+h1,
+p {
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #253159;
+    text-align: center;
+    text-decoration: line-through;
+    letter-spacing: 20px;
+}
+
+a {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+}
