@@ -1,2 +1,2 @@
-ada di folder > htdocs > php-dasar
-ada di folder > htdocs > php-OOP
+harus ada di folder > htdocs > php-dasar
+harus ada di folder > htdocs > php-OOP
