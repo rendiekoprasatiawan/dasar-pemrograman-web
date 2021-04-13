@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Kemana kamu akan pergi?</h1>
+    <ul id="destinations">
+      <li>Amerika</li>
+      <li>Jepang</li>
+      <li>Indonesia</li>
+      <ul>
+        <li>Jakarta</li>
+        <li>Bandar Lampung</li>
+        <li>Palembang</li>
+        <li class="promo">Bandung</li>
+      </ul>
+      <li>Surabaya</li>
+      <li id="bali">Bali</li>
+    </ul>
+    <button id="button1">aksi</button>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("jquery jalan nih bos");
+
+        $("#button1").click(function (e) {
+          e.preventDefault();
+
+          // bisa juga menggunakan child agar lebih spesifik untuk first dan last
+          // $("#destinations > li:first-child").css("background-color", "green");
+          // $("#destinations > li:last-child").css("background-color", "green");
+
+          // ini untuk kesemuanya baik child atau pun cucu/asestornya
+          // $("#destinations li").css("background-color", "yellow");
+
+          // ini hanya untuk child saja tidak berlaku untuk asestornya
+          // $("#destinations > li").css("background-color", "yellow");
+
+          // bisa juga untuk elemen spesifik dan lebih dari satu
+          // $(".promo, #bali").css("background-color", "orange");
+
+          // ini untuk ganjil genap child
+          $("#destinations li:odd").css("background-color", "red");
+          $("#destinations li:even").css("background-color", "blue");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -7,7 +7,7 @@
 // sederhana array menurut WPU
 // array adalah variable yang lebih sakti (karena bisa menampung lebih dari satu nilai)
 
-//contohnya deh 
+//contohnya deh
 /* 
 var hari = 'senin';  | ini bakal ketimpa jadi gabisa
 var hari = 'selasa'; | kalo mau jadinya hari1, hari2 gtu
@@ -25,17 +25,16 @@ var hari7 = 'Minggu';
 // makanya array salah satunya berguna disini
 
 // dengan js kita bisa cukup menuliskan seperti ini
-var hari = ['senin', 'selasa', 'rabu'];
+var hari = ["senin", "selasa", "rabu"];
 
 // untuk kasus mahasiswa
-var mhs = ['rendi', 'raka', 'megi']; /* simpel bukan?*/
+var mhs = ["rendi", "raka", "megi"]; /* simpel bukan?*/
 
 // kenapa harus mmnggunakan array?
 // pertama ya agar mudah dikelola
 // tidak ribet
 // jadi wadah dan didalamnya ada nilai
 // manajemen memori
-
 
 // karakteristik array:
 // variabel jamak, yang mempunyai banyak elemen dan diacu dengan nama yang sama

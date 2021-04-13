@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Kemana kamu akan pergi?</h1>
+    <ul id="destinations">
+      <li class="us">
+        Amerika
+        <button id="keUs">Go!</button>
+        <button id="hapusUs">Hapus</button>
+      </li>
+      <li class="japan">
+        Jepang
+        <button id="keJapan">Go!</button>
+      </li>
+      <li class="indonesia">
+        Indonesia
+        <button id="keIndonesia">Go!</button>
+      </li>
+      <li class="thailand">
+        Thailand
+        <button id="keThailand">Go!</button>
+      </li>
+      <li class="south-korea">
+        Korea Selatan
+        <button id="keSouthKorea">Go!</button>
+      </li>
+    </ul>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("jquery jalan nih bos");
+
+        $("#keUs").on("dblclick", function () {
+          alert("saya suka ke US!");
+        });
+
+        $("#hapusUs").on("click", function () {
+          $(".us").remove();
+          alert("data berhasil dihapus!");
+        });
+      });
+    </script>
+  </body>
+</html>

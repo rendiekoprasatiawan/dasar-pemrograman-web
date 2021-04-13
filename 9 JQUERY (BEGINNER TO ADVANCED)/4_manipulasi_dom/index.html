@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Kemana kamu akan pergi?</h1>
+    <ul id="destinations">
+      <li class="us">Amerika</li>
+      <li class="japan">Jepang</li>
+      <li class="indonesia">Indonesia</li>
+      <li class="thailand">Thailand</li>
+      <li class="south-korea">Korea Selatan</li>
+    </ul>
+    <input id="angka" type="text" value="100" /> <br />
+    <br />
+    <button id="button">tekan jika mau lihat magic</button>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("jquery jalan nih bos");
+
+        $("#button").click(function (e) {
+          let choose = "<h2>Pilih Negara Tujuan Anda</h2>";
+          let negaraAsia = "<li>Filipina</li>";
+          let negaraEropa = "<li>Spanyol</li>";
+          let thanks = "<h2>Terima Kasih</h2>";
+
+          $(choose).insertBefore("#destinations");
+          $(negaraEropa).prependTo("#destinations");
+          $(negaraAsia).appendTo("#destinations");
+          $(thanks).insertAfter("#destinations");
+
+          // untuk get = melihat saja apa yang ada
+          console.log($("#destinations").text());
+          console.log($("#destinations").html());
+          console.log($("#angka").val());
+
+          // untuk set = mengubah apa aja yang mau diubah
+          $(".us").text("Brazil");
+          $(".japan").html("<strong>Brunei</strong>");
+          $("#angka").val(200);
+
+          // beda remove dan empty
+          // remove = menghapus semuanya yang meliputi elemen dan isi
+          // empty = hanya menghapus isi elemen saja
+          $(".indonesia").remove();
+          $(".japan").empty();
+        });
+      });
+    </script>
+  </body>
+</html>

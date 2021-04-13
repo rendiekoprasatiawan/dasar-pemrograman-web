@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .merah {
+      color: red;
+    }
+
+    .biru {
+      color: blue;
+    }
+  </style>
+  <body>
+    <h1>Kemana kamu akan pergi?</h1>
+    <ul id="destinations">
+      <li class="us">Amerika</li>
+      <li class="japan">Jepang</li>
+      <li class="indonesia">Indonesia</li>
+      <li class="thailand">Thailand</li>
+      <li class="south-korea">Korea Selatan</li>
+    </ul>
+
+    <button id="jadiMerah">Red!</button>
+    <button id="jadiBiru">Blue!</button>
+    <button id="jadiBesar">Font Besar!</button>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("jquery jalan nih bos");
+
+        $("#jadiMerah").on("click", function () {
+          $(".us").removeClass("biru");
+          $(".us").addClass("merah");
+        });
+
+        $("#jadiBiru").on("click", function () {
+          $(".us").removeClass("merah");
+          $(".us").addClass("biru");
+        });
+
+        $("#jadiBesar").on("click", function () {
+          $(".us").animate({
+            fontSize: 100,
+            marginLeft: 50,
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
